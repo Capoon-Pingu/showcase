@@ -1,0 +1,16 @@
+{
+"name": "Your Full Name",
+"bio": "Short one-line pitch: who you are and what you do.",
+"longBio": "A longer paragraph about you, your interests, and what you hope to study.",
+"resume": "./resume.pdf",
+"quickInfo": ["High School: Example High","Intended Major: Computer Science","GPA: 4.0"],
+"contact": {"email":"you@example.com","city":"Your City","linkedin":"https://linkedin.com/in/yourprofile"},
+"projects": [
+{"title":"Project One","desc":"Short description of project one. What problem it solves and your role.","tech":"Python, Flask","link":"#","year":"2024"},
+{"title":"Project Two","desc":"Second project description. Include demo link or GitHub link.","tech":"HTML, JS","link":"#","year":"2023"}
+],
+"achievements": [
+{"title":"National Merit Commended","org":"NMSC","year":"2024"},
+{"title":"First Place — Regional Math Contest","org":"State Math League","year":"2023"}
+]
+}
