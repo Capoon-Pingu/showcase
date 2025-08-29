@@ -1,0 +1,52 @@
+:root{
+--glass-bg: rgba(255,255,255,0.06);
+--glass-border: rgba(255,255,255,0.12);
+--accent: rgba(130,190,255,0.95);
+--text: #eaeef6;
+--muted: rgba(234,238,246,0.7);
+--card-radius: 14px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+color:var(--text);
+background:linear-gradient(180deg,#061428 0%,#00111a 100%);
+overflow-x:hidden;
+}
+.bg-canvas{position:fixed;inset:0;z-index:0}
+.nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:24px;padding:8px 16px;z-index:10}
+.nav .brand{font-weight:700;letter-spacing:0.6px}
+.nav nav a{margin:0 8px;padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--muted)}
+.nav nav a.active{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.03)}
+.container{position:relative;z-index:2;max-width:1100px;margin:120px auto;padding:24px}
+.glass{background:var(--glass-bg);border:1px solid var(--glass-border);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:var(--card-radius);padding:18px;margin-bottom:18px}
+.hero{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.hero-left{flex:1}
+.hero-right{width:320px}
+.card{padding:16px}
+h1{font-size:2.1rem;margin:0 0 8px}
+h2{margin:8px 0}
+p{color:var(--muted);margin:6px 0 14px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(180deg,var(--accent),rgba(70,140,220,0.85));color:#03102a;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.06)}
+.actions{display:flex;gap:12px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.project{padding:12px;border-radius:12px}
+.project h4{margin:0 0 6px}
+.quick-info{list-style:none;padding:0;margin:0}
+.quick-info li{margin:6px 0;color:var(--muted)}
+.footer{display:flex;justify-content:space-between;align-items:center;padding:10px}
+
+
+/* small screens */
+@media (max-width:800px){.hero{flex-direction:column}.hero-right{width:100%}}
+
+
+/* small visual polish */
+.project .meta{font-size:0.9rem;color:var(--muted)}
+
+
+/* accessibility focus */
+a:focus{outline:2px solid rgba(130,190,255,0.25);outline-offset:3px}
